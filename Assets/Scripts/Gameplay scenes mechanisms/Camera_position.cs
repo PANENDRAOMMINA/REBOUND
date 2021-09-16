@@ -21,10 +21,7 @@ public class Camera_position : MonoBehaviour
 
     public float far_distance;
 
-    private void Awake()
-    {
-        
-    }
+   
 
     private void Start()
     {
@@ -39,34 +36,41 @@ public class Camera_position : MonoBehaviour
     {
         if(!FindObjectOfType<Sphere_Maintainer>().player_Destroy||(!FindObjectOfType<Win_Stone>().win&&FindObjectOfType<Win_Stone>()!=null))
         {
-            if (SceneManager.GetActiveScene().buildIndex > 0)
+            
+            if (SceneManager.GetActiveScene().buildIndex > 1)
             {
+                if (FindObjectOfType<Sphere_Maintainer>().player_Destroy_on_win == false)
+                {
+                    Vector3 v = FindObjectOfType<Sphere>().transform.position;
 
-                Vector3 v = FindObjectOfType<Sphere>().transform.position;
-
-                if (v.x < Max_x && v.x > Min_x && v.z > Min_z && v.z < Max_z)
-                {
-                    Vector3 camera_position = v + new Vector3(0, Height, -2);
-                    transform.position = camera_position;
-                }
-                if (_show_finish)
-                {
-                    time += Time.deltaTime;
-                    transform.position = Vector3.Lerp(v + new Vector3(0, Height, far_distance), _finish, time);
-                }
-                else
-                {
-                    time += Time.deltaTime;
-                    transform.position = Vector3.Lerp(_finish, v + new Vector3(0, Height, far_distance), time);
+                    if (v.x < Max_x && v.x > Min_x && v.z > Min_z && v.z < Max_z)
+                    {
+                        Vector3 camera_position = v + new Vector3(0, Height, -2);
+                        transform.position = camera_position;
+                    }
+                    if (_show_finish)
+                    {
+                        time += Time.deltaTime;
+                        transform.position = Vector3.Lerp(v + new Vector3(0, Height, far_distance), _finish, time);
+                    }
+                    else
+                    {
+                        time += Time.deltaTime;
+                        transform.position = Vector3.Lerp(_finish, v + new Vector3(0, Height, far_distance), time);
+                    }
                 }
             }
             else
             {
-                Vector3 v = FindObjectOfType<Sphere>().transform.position;
-                if (v.x < Max_x && v.x > Min_x && v.z > Min_z && v.z < Max_z)
+                if (FindObjectOfType<Sphere_Maintainer>().player_Destroy_on_win == false)
                 {
-                    Vector3 camera_position = v + new Vector3(0, Height, 0);
-                    transform.position = camera_position;
+                    
+                    Vector3 v = FindObjectOfType<Sphere>().transform.position;
+                    if (v.x < Max_x && v.x > Min_x && v.z > Min_z && v.z < Max_z)
+                    {
+                        Vector3 camera_position = v + new Vector3(0, Height, 0);
+                        transform.position = camera_position;
+                    }
                 }
             }
         }

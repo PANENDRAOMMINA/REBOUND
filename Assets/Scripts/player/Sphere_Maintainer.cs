@@ -11,6 +11,7 @@ public class Sphere_Maintainer : MonoBehaviour
     public GameObject Sphere;
 
     public bool player_Destroy;
+    public bool player_Destroy_on_win;
 
     public GameObject Pause_Canvas;
 
@@ -27,11 +28,13 @@ public class Sphere_Maintainer : MonoBehaviour
     public void Awake()
     {
         initial_position = Sphere.transform.position;
-       
+        player_Destroy_on_win = false;
+        player_Destroy = false;
     }
     public void Start()
     {
-        lose_particles.GetComponent<ParticleSystem>().Pause();
+        if(SceneManager.GetActiveScene().buildIndex>2)
+            lose_particles.GetComponent<ParticleSystem>().Pause();
     }
 
 

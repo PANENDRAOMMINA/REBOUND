@@ -22,7 +22,8 @@ public class Shoot_Laser : Rotation_Handler
     }
     public void Set_Position()
     {
-        transform.position = Sphere.transform.position;
+        if(FindObjectOfType<Sphere_Maintainer>().player_Destroy_on_win==false)
+            transform.position = Sphere.transform.position;
     }
 
 

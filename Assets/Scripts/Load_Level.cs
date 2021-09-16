@@ -20,6 +20,8 @@ public class Load_Level : MonoBehaviour
         {
             var level_name = "LEVEL " + number.ToString();
             FindObjectOfType<Sphere>().GetComponent<Rigidbody>().velocity=Vector3.zero;
+            FindObjectOfType<Sphere_Maintainer>().player_Destroy_on_win = true;
+            FindObjectOfType<Sphere_Maintainer>().player_Destroy = false;
             enable_win_particles();
             Destroy(other.gameObject, 1f);
             PlayerPrefs.SetString("Level_Name", level_name);
