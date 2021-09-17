@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4000013145770572}
   - component: {fileID: 33000013166328838}
   - component: {fileID: 23000013186071304}
+  - component: {fileID: 316571984}
   m_Layer: 0
   m_Name: Single Cube 4
   m_TagString: Untagged
@@ -163,6 +164,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &316571984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010375054772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000007, y: 2.0000074, z: 2.0000076}
+  m_Center: {x: -0.00000035762784, y: 0.00000047683716, z: -0.0000017881395}
 --- !u!1 &1000010906518540
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +188,7 @@ GameObject:
   - component: {fileID: 4000010136097350}
   - component: {fileID: 33000010174076152}
   - component: {fileID: 23000010348086440}
+  - component: {fileID: 316571985}
   m_Layer: 0
   m_Name: Single Cube 14
   m_TagString: Untagged
@@ -244,6 +259,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &316571985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010906518540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 1.0000037, z: 2.000007}
+  m_Center: {x: 0.0000007748603, y: -0.00000011920929, z: 0.0000004768371}
 --- !u!1 &1000011142239876
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +526,7 @@ GameObject:
   - component: {fileID: 4000011553815748}
   - component: {fileID: 33000014152624836}
   - component: {fileID: 23000011572719428}
+  - component: {fileID: 316571987}
   m_Layer: 0
   m_Name: Block 1x3
   m_TagString: Untagged
@@ -568,6 +597,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &316571987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011584477596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000021, y: 6.000006, z: 2.0000226}
+  m_Center: {x: 0.0000016689302, y: 3, z: -0.000009894371}
 --- !u!1 &1000011638362178
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +621,7 @@ GameObject:
   - component: {fileID: 4000010869721406}
   - component: {fileID: 33000010854880842}
   - component: {fileID: 23000010806970318}
+  - component: {fileID: 316571986}
   m_Layer: 0
   m_Name: Block 1x2
   m_TagString: Untagged
@@ -649,6 +692,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &316571986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011638362178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 4.000007, z: 2.0000148}
+  m_Center: {x: -0.0000005485492, y: 1.999999, z: -0.000005020296}
 --- !u!1 &1000013311032376
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +714,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000010542303642}
-  - component: {fileID: 4200758341112755950}
   - component: {fileID: 718030992}
   m_Layer: 0
   m_Name: Example Pieced Prefab 3
@@ -690,19 +745,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4200758341112755950
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013311032376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &718030992
 MonoBehaviour:
   m_ObjectHideFlags: 0

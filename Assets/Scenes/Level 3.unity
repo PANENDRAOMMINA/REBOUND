@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
+  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2962,6 +2962,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1072781618}
     m_Modifications:
+    - target: {fileID: 1583996040, guid: c7e59f9921ac1164fad771e9267437f5, type: 3}
+      propertyPath: m_Size.z
+      value: 8.393463
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583996040, guid: c7e59f9921ac1164fad771e9267437f5, type: 3}
+      propertyPath: m_Center.z
+      value: 0.4463539
+      objectReference: {fileID: 0}
     - target: {fileID: 1000014286614112, guid: c7e59f9921ac1164fad771e9267437f5, type: 3}
       propertyPath: m_Name
       value: Example Pieced Prefab 2 (1)
