@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33000013622180130}
   - component: {fileID: 23000013294985818}
   - component: {fileID: 766655074}
+  - component: {fileID: 1666284461952106329}
   m_Layer: 0
   m_Name: Idol Base
-  m_TagString: Untagged
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -95,3 +96,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.48135, y: 6.0000544, z: 8.481331}
   m_Center: {x: 0, y: 2.9999971, z: -0.0000035762787}
+--- !u!114 &1666284461952106329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013552545360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379b6ddcfdd62ef469eaf79f947083db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  last_velocity: {x: 0, y: 0, z: 0}
