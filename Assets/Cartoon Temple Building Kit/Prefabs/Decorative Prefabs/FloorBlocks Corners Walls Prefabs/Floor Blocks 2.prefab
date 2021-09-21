@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33000012341663732}
   - component: {fileID: 23000014023677800}
   - component: {fileID: 4965088306456050591}
-  - component: {fileID: 1394742013894580752}
+  - component: {fileID: 7660677178231067661}
   m_Layer: 0
   m_Name: Floor Blocks 2
   m_TagString: Mirror
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012712754930}
-  m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   last_velocity: {x: 0, y: 0, z: 0}
---- !u!65 &1394742013894580752
-BoxCollider:
+--- !u!64 &7660677178231067661
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106,6 +106,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.895801, y: 2.121171, z: 9.011296}
-  m_Center: {x: -0.24203563, y: -0.7916443, z: 0.27150583}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9b96ab0463d5a9147aa9d86ec2f1fd66, type: 3}
