@@ -8,6 +8,7 @@ public class Load_Level : MonoBehaviour
     public int number;
     public Transform finish_particles;
     public Transform sphere;
+   
 
     public void Awake()
     {
@@ -24,6 +25,7 @@ public class Load_Level : MonoBehaviour
             FindObjectOfType<Sphere_Maintainer>().player_Destroy = false;
             enable_win_particles();
             Destroy(other.gameObject, 1f);
+            
             PlayerPrefs.SetString("Level_Name", level_name);
             PlayerPrefs.DeleteKey("Max_Force");
             StartCoroutine(Wait(4f));

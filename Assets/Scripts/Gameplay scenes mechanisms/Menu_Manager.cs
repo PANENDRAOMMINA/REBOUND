@@ -20,6 +20,7 @@ public class Menu_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("Levels scene");
         PlayerPrefs.DeleteKey("Force");
+        Time.timeScale = 1f;
     }
     
     public void Level_win(int number)
@@ -34,6 +35,7 @@ public class Menu_Manager : MonoBehaviour
     public void  Menu()
     {
         SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
         
        
     }

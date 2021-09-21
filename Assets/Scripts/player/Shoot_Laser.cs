@@ -15,10 +15,13 @@ public class Shoot_Laser : Rotation_Handler
     }
     private void Update()
     {
-        Rotate();
-        Destroy(GameObject.Find("Laser Beam")); 
-        beam = new Laser_Beam(gameObject.transform.position,transform.forward,material,length);
-        Set_Position();
+        if (FindObjectOfType<Sphere>() != null)
+        {
+            Rotate();
+            Destroy(GameObject.Find("Laser Beam"));
+            beam = new Laser_Beam(gameObject.transform.position, transform.forward, material, length);
+            Set_Position();
+        }
     }
     public void Set_Position()
     {

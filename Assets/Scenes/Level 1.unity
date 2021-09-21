@@ -1821,7 +1821,7 @@ PrefabInstance:
     - target: {fileID: 4560678963938391863, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
       propertyPath: Prefab_Sphere
       value: 
-      objectReference: {fileID: 352330544025944093, guid: 38c7c49a9e7f1084290391fb50c31d54, type: 3}
+      objectReference: {fileID: 3201568968462954124, guid: 38c7c49a9e7f1084290391fb50c31d54, type: 3}
     - target: {fileID: 4560678963938391863, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
       propertyPath: lose_particles
       value: 
@@ -8217,6 +8217,7 @@ MonoBehaviour:
   level_number: 1
   win_canvas: {fileID: 1289366833}
   win: 0
+  laser: {fileID: 352330542953999836}
   finish_particles: {fileID: 1826117716}
 --- !u!1 &671908694
 GameObject:

@@ -10,6 +10,7 @@ public class Win_Stone : MonoBehaviour
     public GameObject win_canvas;
     public bool win;
     private GameObject sphere;
+ 
 
     public Transform finish_particles;
 
@@ -31,6 +32,7 @@ public class Win_Stone : MonoBehaviour
             FindObjectOfType<Sphere_Maintainer>().player_Destroy = false;
             enable_win_particles();
             Destroy(collision.gameObject, 0.6f);
+            
             StartCoroutine(Enable_win_canvas(2f));
         }
     }

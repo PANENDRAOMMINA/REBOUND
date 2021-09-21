@@ -154,9 +154,6 @@ public class Sphere : Rotation_Handler
         }
         else
         {
-           
-            
-
             wait_turn = true;
         }
     }

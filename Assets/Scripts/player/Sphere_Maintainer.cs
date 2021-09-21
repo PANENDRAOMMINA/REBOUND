@@ -75,7 +75,7 @@ public class Sphere_Maintainer : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (SceneManager.GetActiveScene().buildIndex > 0&&!FindObjectOfType<Win_Stone>().win)
+            if (SceneManager.GetActiveScene().buildIndex > 0 &&!FindObjectOfType<Win_Stone>().win)
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
