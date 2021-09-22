@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 33000013817737356}
   - component: {fileID: 23000010932446586}
   - component: {fileID: 1244136091}
-  - component: {fileID: 1244136090}
-  - component: {fileID: -6718939191785153025}
-  - component: {fileID: 3457286060095149683}
+  - component: {fileID: 4954543843791729855}
   m_Layer: 0
   m_Name: Floor Blocks 17
   m_TagString: Mirror
@@ -98,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   last_velocity: {x: 0, y: 0, z: 0}
---- !u!65 &1244136090
-BoxCollider:
+--- !u!64 &4954543843791729855
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,32 +106,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.676399, y: 2.0708597, z: 7.0000076}
-  m_Center: {x: 0.16180027, y: -0.7907917, z: -0.49999654}
---- !u!114 &-6718939191785153025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010799864558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 379b6ddcfdd62ef469eaf79f947083db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  last_velocity: {x: 0, y: 0, z: 0}
---- !u!65 &3457286060095149683
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010799864558}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.676399, y: 2.0708597, z: 7.0000076}
-  m_Center: {x: 0.16180122, y: -0.7907917, z: -0.49999654}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1a257a673c3553a44a9802df278bcfbd, type: 3}

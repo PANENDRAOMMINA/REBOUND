@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4000012390516446}
   - component: {fileID: 33000011415331572}
   - component: {fileID: 23000012665508278}
-  - component: {fileID: 4030388971505435064}
   - component: {fileID: 6980160877653020190}
-  - component: {fileID: -6180874463830066072}
+  - component: {fileID: 6715124362285254910}
   m_Layer: 0
   m_Name: Floor Blocks 4
   m_TagString: Mirror
@@ -84,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4030388971505435064
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011005556510}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 17.824636, y: 2.2652135, z: 17.873941}
-  m_Center: {x: -0.18734743, y: -0.8919417, z: 0.010324477}
 --- !u!114 &6980160877653020190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   last_velocity: {x: 0, y: 0, z: 0}
---- !u!65 &-6180874463830066072
-BoxCollider:
+--- !u!64 &6715124362285254910
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,6 +106,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 18.244732, y: 2.2652133, z: 17.87394}
-  m_Center: {x: 0.02270794, y: -0.8919383, z: 0.010324478}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c47d7cc5fd55bed4ea0787ed91b614f5, type: 3}
