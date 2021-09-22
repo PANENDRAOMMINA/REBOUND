@@ -9,6 +9,8 @@ public class Portal : MonoBehaviour
     public Transform exit;
     public GameObject sphere;
 
+    public Vector3 displace_vector;
+
     // Update is called once per frame
     
 
@@ -18,8 +20,7 @@ public class Portal : MonoBehaviour
         {
             Vector3 v = exit.transform.position;
             sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            sphere.GetComponent<Transform>().position = v;
-
+            sphere.GetComponent<Transform>().position = v+ displace_vector;
         }
     }
 }

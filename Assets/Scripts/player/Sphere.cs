@@ -197,7 +197,7 @@ public class Sphere : Rotation_Handler
         if (other.gameObject.CompareTag("Settings"))
         {
             Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            
         }
     }
 
