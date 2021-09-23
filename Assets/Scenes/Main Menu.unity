@@ -46238,7 +46238,9 @@ TextMesh:
   m_GameObject: {fileID: 1954070434}
   m_Text: 'Use mouse to aim
 
-    hold  [space]  to play'
+    hold  [space]  to play
+
+    r to restsart'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 0.75
@@ -46301,7 +46303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954070434}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.93210125, y: -0, z: -28.72}
+  m_LocalPosition: {x: 0.93210125, y: -0, z: -28.01}
   m_LocalScale: {x: 0.58172, y: 0.58172023, z: 0.58172023}
   m_Children: []
   m_Father: {fileID: 0}
