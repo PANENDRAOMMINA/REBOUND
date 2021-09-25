@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33000011522965186}
   - component: {fileID: 23000011472808228}
   - component: {fileID: -6194152429279510826}
-  - component: {fileID: -649817296238792002}
+  - component: {fileID: 3672883561303828164}
   m_Layer: 0
   m_Name: Block Ruin Wall 1
   m_TagString: Mirror
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011145740162}
-  m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   last_velocity: {x: 0, y: 0, z: 0}
---- !u!65 &-649817296238792002
-BoxCollider:
+--- !u!64 &3672883561303828164
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106,6 +106,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.672577, y: 3.5973997, z: 2.672899}
-  m_Center: {x: 0.16371083, y: 1.7986975, z: 0.6635517}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 940384c4eeeb00048829f4c2ac0988cb, type: 3}
