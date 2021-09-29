@@ -47961,15 +47961,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622962359, guid: 8be2a53a3422f914b8d2c8556b5b3a3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.72
+      value: -11.03
       objectReference: {fileID: 0}
     - target: {fileID: 1792062681, guid: 8be2a53a3422f914b8d2c8556b5b3a3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.14
+      value: 6.41
       objectReference: {fileID: 0}
     - target: {fileID: 1792062681, guid: 8be2a53a3422f914b8d2c8556b5b3a3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.93
+      value: -6.02
       objectReference: {fileID: 0}
     - target: {fileID: 704780400382772333, guid: 8be2a53a3422f914b8d2c8556b5b3a3b, type: 3}
       propertyPath: sphere

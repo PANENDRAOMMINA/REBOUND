@@ -12,9 +12,14 @@ public class Obstacles : MonoBehaviour
         {
             Destroy(collision.gameObject);
             FindObjectOfType<Sphere_Maintainer>().enable_lose_particles();
-            FindObjectOfType<Sphere_Maintainer>().player_Destroy = true;
+            StartCoroutine(enable_respawn(3));
         }
     }
     
+    IEnumerator enable_respawn(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        FindObjectOfType<Sphere_Maintainer>().player_Destroy=true;
+    }
 
 }

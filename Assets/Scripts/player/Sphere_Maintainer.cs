@@ -31,16 +31,18 @@ public class Sphere_Maintainer : MonoBehaviour
         player_Destroy_on_win = false;
         player_Destroy = false;
     }
+
     public void Start()
     {
         if(SceneManager.GetActiveScene().buildIndex>2)
             lose_particles.GetComponent<ParticleSystem>().Pause();
+       
     }
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)&&player_Destroy)
+        if (player_Destroy)
         {
             if (SceneManager.GetActiveScene().buildIndex > 0)
             { 
@@ -48,8 +50,11 @@ public class Sphere_Maintainer : MonoBehaviour
                     GameObject sphere = Instantiate(Prefab_Sphere, initial_position, Quaternion.identity);
                     sphere.GetComponent<Sphere>().mouse = mouse;
                     sphere.GetComponent<Sphere>().count_text = count_text;
-                    sphere.GetComponent<Sphere>().Fill_Amount = fill_amount;
+                    Transform a = sphere.transform.Find("Canvas");
+                    sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                     sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                    lose_particles.GetComponent<ParticleSystem>().Stop();
+                    FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                 }
                 else 
                 {
@@ -57,17 +62,22 @@ public class Sphere_Maintainer : MonoBehaviour
                         GameObject sphere = Instantiate(Prefab_Sphere, new Vector3(PlayerPrefs.GetFloat("Position_x"), PlayerPrefs.GetFloat("Position_y"), PlayerPrefs.GetFloat("Position_z")), Quaternion.identity);
                         sphere.GetComponent<Sphere>().mouse = mouse;
                         sphere.GetComponent<Sphere>().count_text = count_text;
-                        sphere.GetComponent<Sphere>().Fill_Amount = fill_amount;
+                        Transform a = sphere.transform.Find("Canvas");
+                        sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                     }
+                        lose_particles.GetComponent<ParticleSystem>().Stop();
+                        FindObjectOfType<Shoot_Laser>().Sphere = sphere;
+                    }
                      else
                     {
                         GameObject sphere = Instantiate(Prefab_Sphere, initial_position, Quaternion.identity);
                         sphere.GetComponent<Sphere>().mouse = mouse;
                         sphere.GetComponent<Sphere>().count_text = count_text;
-                        sphere.GetComponent<Sphere>().Fill_Amount = fill_amount;
+                        Transform a = sphere.transform.Find("Canvas");
+                        sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                        sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        lose_particles.GetComponent<ParticleSystem>().Stop();
+                        FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                     }
                 }
                 player_Destroy = false;
