@@ -126,7 +126,6 @@ MonoBehaviour:
   orb_count: 0
   Fill_Amount: {fileID: 6630515160564474731}
   force_index: 0
-  restart_particles: {fileID: 108474, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
   rb: {fileID: 6406344820096098093}
   level_meter: 0
 --- !u!54 &6406344820096098093
@@ -217,7 +216,7 @@ MonoBehaviour:
   m_FillMethod: 4
   m_FillAmount: 0.541
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 3
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6630515161246712840
