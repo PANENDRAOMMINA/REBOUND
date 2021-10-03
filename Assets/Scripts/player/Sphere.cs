@@ -8,9 +8,6 @@ using TMPro;
 
 public class Sphere : Rotation_Handler
 { 
-
-    
-    
     public bool is_released, increase_force, is_auto_lock = true, wait_turn;
 
     public Vector3 initial_position;
@@ -26,8 +23,11 @@ public class Sphere : Rotation_Handler
     public Image Fill_Amount;
 
     public float force_index;
-   
-  
+
+    private GameObject restart_particles;
+
+
+
     public int Force_index
     {
         get
@@ -86,7 +86,9 @@ public class Sphere : Rotation_Handler
                     rb.velocity = Vector3.zero;
                 }
             }
-              
+            play_restart_particles();
+
+
         }
        
       
@@ -199,6 +201,13 @@ public class Sphere : Rotation_Handler
             Cursor.visible = false;
             
         }
+    }
+    public void play_restart_particles()
+    {
+        restart_particles = GameObject.Find("RestartParticles");
+        Vector3 v = transform.position;
+        restart_particles.transform.position = v;
+        restart_particles.GetComponent<ParticleSystem>().Play();
     }
 
 }
