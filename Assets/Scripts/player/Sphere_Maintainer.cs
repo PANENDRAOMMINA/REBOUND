@@ -55,6 +55,7 @@ public class Sphere_Maintainer : MonoBehaviour
                     sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                     lose_particles.GetComponent<ParticleSystem>().Stop();
                     FindObjectOfType<Shoot_Laser>().Sphere = sphere;
+                    Sphere = sphere;
                 }
                 else 
                 {
@@ -67,6 +68,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
+                        Sphere = sphere;
                     }
                      else
                     {
@@ -78,6 +80,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
+                        Sphere = sphere;
                     }
                 }
                 player_Destroy = false;
