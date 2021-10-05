@@ -207,6 +207,7 @@ public class Sphere : Rotation_Handler
         restart_particles = GameObject.Find("RestartParticles");
         Vector3 v = transform.position;
         restart_particles.transform.position = v;
+        FindObjectOfType<Audio_sounds>().Play("Glitter");
         restart_particles.GetComponent<ParticleSystem>().Play();
     }
 
