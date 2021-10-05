@@ -60352,6 +60352,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872844270}
   m_Mesh: {fileID: 4300000, guid: 64d53eaf0a7b1bf4c95c0f47de0d7cd4, type: 3}
+--- !u!4 &1876827025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 483160, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
+  m_PrefabInstance: {fileID: 2092720473}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880892441
 GameObject:
   m_ObjectHideFlags: 0
@@ -82477,6 +82482,10 @@ PrefabInstance:
       propertyPath: lose_particles
       value: 
       objectReference: {fileID: 841726381}
+    - target: {fileID: 4560678963938391863, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
+      propertyPath: respawn_particles
+      value: 
+      objectReference: {fileID: 1876827025}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
 --- !u!114 &4560678964085427789 stripped

@@ -18,6 +18,7 @@ public class Sphere_Maintainer : MonoBehaviour
     public Vector3 initial_position;
 
     public Transform lose_particles;
+    public Transform respawn_particles;
 
 
     public Image fill_amount;
@@ -56,6 +57,7 @@ public class Sphere_Maintainer : MonoBehaviour
                     lose_particles.GetComponent<ParticleSystem>().Stop();
                     FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                     Sphere = sphere;
+                    StartCoroutine(enable_win_particles(2f));
                 }
                 else 
                 {
@@ -69,6 +71,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
+                        StartCoroutine(enable_win_particles(2f));
                     }
                      else
                     {
@@ -81,6 +84,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
+                        StartCoroutine(enable_win_particles(2f));
                     }
                 }
                 player_Destroy = false;
@@ -111,6 +115,15 @@ public class Sphere_Maintainer : MonoBehaviour
         Vector3 v = Sphere.transform.position;
         lose_particles.transform.position = v;
         lose_particles.GetComponent<ParticleSystem>().Play();
+    }
+
+    IEnumerator enable_win_particles(float time)
+    {
+        Vector3 v = Sphere.transform.position;
+        respawn_particles.transform.position = v;
+        respawn_particles.GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSecondsRealtime(time);
+        respawn_particles.GetComponent<ParticleSystem>().Stop();
     }
 
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
+  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2675,6 +2675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
+--- !u!4 &197762000 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 483160, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
+  m_PrefabInstance: {fileID: 197761999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &199901732
 GameObject:
   m_ObjectHideFlags: 0
@@ -10356,6 +10361,7 @@ MonoBehaviour:
   Pause_Canvas: {fileID: 2088007425725018172}
   initial_position: {x: 0, y: 0, z: 0}
   lose_particles: {fileID: 841726381}
+  respawn_particles: {fileID: 197762000}
   fill_amount: {fileID: 1112536597}
   mouse: {fileID: 1034299216}
   count_text: {fileID: 1273296829}

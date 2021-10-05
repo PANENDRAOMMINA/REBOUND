@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
+  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -39046,6 +39046,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
+--- !u!4 &1161248645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 483160, guid: 953ca70406ee83c468a2f42fd56bdbe7, type: 3}
+  m_PrefabInstance: {fileID: 1161248644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1175744341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83073,6 +83078,10 @@ PrefabInstance:
       propertyPath: lose_particles
       value: 
       objectReference: {fileID: 841726381}
+    - target: {fileID: 4560678963938391863, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
+      propertyPath: respawn_particles
+      value: 
+      objectReference: {fileID: 1161248645}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7edd058ad6b87240964f42af9bf9e3e, type: 3}
 --- !u!114 &4560678964085427789 stripped
