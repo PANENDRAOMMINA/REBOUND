@@ -9,6 +9,8 @@ public class Upgrade_System : MonoBehaviour
     public Upgrade_attributes[] upgrades = new Upgrade_attributes[2];
     public int length = 5;
 
+    public TMP_Text orbcount_text;
+
     private Sphere _sphere;
 
     public TMP_Text Force_Cost_Text;
@@ -28,6 +30,9 @@ public class Upgrade_System : MonoBehaviour
 
         var v2 = "COST : " + upgrades[1].cost + " ORBS";
         Force_Cost_Text.text = v2;
+
+        var v3 = "ORBS : " + _sphere.orb_count;
+        orbcount_text.text = v3;
     }
 
 

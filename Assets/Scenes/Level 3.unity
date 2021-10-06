@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
+  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10364,7 +10364,7 @@ MonoBehaviour:
   respawn_particles: {fileID: 197762000}
   fill_amount: {fileID: 1112536597}
   mouse: {fileID: 1034299216}
-  count_text: {fileID: 1622777085}
+  count_text: {fileID: 0}
 --- !u!1001 &416668892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51601,17 +51601,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
---- !u!114 &1622777085 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1370003326, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
-  m_PrefabInstance: {fileID: 1622777084}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1623045274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87411,6 +87400,7 @@ MonoBehaviour:
     levelup_slider: {fileID: 2088007424972199411}
     cost: 1
   length: 5
+  orbcount_text: {fileID: 2088007425269821564}
   Force_Cost_Text: {fileID: 2088007425483530326}
   Laser_Cost_Text: {fileID: 2088007425471235934}
   increase_force_index: 0

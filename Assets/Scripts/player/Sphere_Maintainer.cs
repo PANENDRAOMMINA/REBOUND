@@ -45,7 +45,7 @@ public class Sphere_Maintainer : MonoBehaviour
     {
         if (player_Destroy)
         {
-            if (SceneManager.GetActiveScene().buildIndex > 0)
+            if (SceneManager.GetActiveScene().buildIndex >= 0)
             { 
                 if (FindObjectOfType<Checkpoint>() == null) {
                     GameObject sphere = Instantiate(Prefab_Sphere, initial_position, Quaternion.identity);

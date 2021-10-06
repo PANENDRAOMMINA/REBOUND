@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
+  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -42191,17 +42191,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
---- !u!114 &1617497871 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1370003326, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
-  m_PrefabInstance: {fileID: 1617497870}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1621610814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55675,7 +55664,7 @@ MonoBehaviour:
   respawn_particles: {fileID: 1140580249}
   fill_amount: {fileID: 2134996568}
   mouse: {fileID: 1872262653}
-  count_text: {fileID: 1617497871}
+  count_text: {fileID: 0}
 --- !u!4 &2057861194
 Transform:
   m_ObjectHideFlags: 0
@@ -61801,6 +61790,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2088007425504471922, guid: 683cfae1c34ed954f819423fbe4b1015, type: 3}
+      propertyPath: orbcount_text
+      value: 
+      objectReference: {fileID: 2088007424250394253}
     - target: {fileID: 2088007425504471923, guid: 683cfae1c34ed954f819423fbe4b1015, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -61860,6 +61853,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2088007425504471932, guid: 683cfae1c34ed954f819423fbe4b1015, type: 3}
   m_PrefabInstance: {fileID: 2088007424250394251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2088007424250394253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2088007425959406396, guid: 683cfae1c34ed954f819423fbe4b1015, type: 3}
+  m_PrefabInstance: {fileID: 2088007424250394251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4207181505372619971
 PrefabInstance:
   m_ObjectHideFlags: 0
