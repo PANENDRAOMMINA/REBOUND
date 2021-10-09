@@ -166,7 +166,7 @@ public class Sphere : Rotation_Handler
         {
             Vector3 v = Vector3.MoveTowards(new Vector3(transform.position.x,transform.position.y,transform.position.z),new Vector3(other.transform.position.x,transform.position.y,other.transform.position.z), 0.08f);
             transform.position = v;
-            Debug.Log(rb.velocity);
+           
         }
         if(other.gameObject.CompareTag("Play")) SceneManager.LoadScene("Levels-Scene");
         if (other.gameObject.CompareTag("End"))
