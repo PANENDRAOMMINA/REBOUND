@@ -12,6 +12,7 @@ public class Obstacles : MonoBehaviour
         {
             Destroy(collision.gameObject);
             FindObjectOfType<Sphere_Maintainer>().enable_lose_particles();
+            FindObjectOfType<Audio_sounds>().Play("Explosion");
             StartCoroutine(enable_respawn(3));
         }
     }

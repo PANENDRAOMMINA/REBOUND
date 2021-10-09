@@ -58,6 +58,7 @@ public class Sphere_Maintainer : MonoBehaviour
                     FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                     Sphere = sphere;
                     StartCoroutine(enable_win_particles(2f));
+                    FindObjectOfType<Audio_sounds>().Play("Glitter");
                 }
                 else 
                 {
@@ -72,6 +73,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
                         StartCoroutine(enable_win_particles(2f));
+                        FindObjectOfType<Audio_sounds>().Play("Glitter");
                     }
                      else
                     {
@@ -85,6 +87,7 @@ public class Sphere_Maintainer : MonoBehaviour
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
                         StartCoroutine(enable_win_particles(2f));
+                        FindObjectOfType<Audio_sounds>().Play("Glitter");
                     }
                 }
                 player_Destroy = false;
