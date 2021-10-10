@@ -23,7 +23,7 @@ public class Win_Stone : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)  
     {
-        if(collision.gameObject.CompareTag("Sphere"))
+        if (collision.gameObject.CompareTag("Sphere"))
         {
             win = true;
             Cursor.visible = true;
@@ -44,6 +44,7 @@ public class Win_Stone : MonoBehaviour
     }
     public void enable_win_particles()
     {
+        if (sphere == null) sphere = GameObject.Find("Sphere");
         Vector3 v = sphere.transform.position;
         finish_particles.transform.position = v;
         finish_particles.GetComponent<ParticleSystem>().Play();

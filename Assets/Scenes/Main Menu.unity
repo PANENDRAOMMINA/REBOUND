@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44582367, g: 0.49555188, b: 0.5743281, a: 1}
+  m_IndirectSpecularColor: {r: 0.4458232, g: 0.49555135, b: 0.57432705, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -38839,6 +38839,13 @@ MonoBehaviour:
     output: {fileID: 24300002, guid: 92426b7e70ccb194ca081f9c56b3d5e1, type: 2}
   - name: Explosion
     clip: {fileID: 8300000, guid: 26326aebbd5f99947a29637609bfd8ef, type: 3}
+    loop: 0
+    Pitch: 1
+    Volume: 1
+    source: {fileID: 0}
+    output: {fileID: 24300002, guid: 92426b7e70ccb194ca081f9c56b3d5e1, type: 2}
+  - name: Lightening
+    clip: {fileID: 8300000, guid: 3b83ac0daf4ac2348897aa940fd6fada, type: 3}
     loop: 0
     Pitch: 1
     Volume: 1
