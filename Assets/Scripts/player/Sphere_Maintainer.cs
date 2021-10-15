@@ -51,11 +51,13 @@ public class Sphere_Maintainer : MonoBehaviour
                     GameObject sphere = Instantiate(Prefab_Sphere, initial_position, Quaternion.identity);
                     sphere.GetComponent<Sphere>().mouse = mouse;
                     sphere.GetComponent<Sphere>().count_text = count_text;
+                    sphere.name = "Sphere";
                     Transform a = sphere.transform.Find("Canvas");
                     sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                     sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                     lose_particles.GetComponent<ParticleSystem>().Stop();
                     FindObjectOfType<Shoot_Laser>().Sphere = sphere;
+                    sphere.gameObject.tag = "Sphere";
                     Sphere = sphere;
                     StartCoroutine(enable_win_particles(2f));
                     FindObjectOfType<Audio_sounds>().Play("Glitter");
@@ -66,12 +68,14 @@ public class Sphere_Maintainer : MonoBehaviour
                         GameObject sphere = Instantiate(Prefab_Sphere, new Vector3(PlayerPrefs.GetFloat("Position_x"), PlayerPrefs.GetFloat("Position_y"), PlayerPrefs.GetFloat("Position_z")), Quaternion.identity);
                         sphere.GetComponent<Sphere>().mouse = mouse;
                         sphere.GetComponent<Sphere>().count_text = count_text;
+                        sphere.name = "Sphere";
                         Transform a = sphere.transform.Find("Canvas");
                         sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
+                        sphere.gameObject.tag = "Sphere";
                         StartCoroutine(enable_win_particles(2f));
                         FindObjectOfType<Audio_sounds>().Play("Glitter");
                     }
@@ -80,12 +84,14 @@ public class Sphere_Maintainer : MonoBehaviour
                         GameObject sphere = Instantiate(Prefab_Sphere, initial_position, Quaternion.identity);
                         sphere.GetComponent<Sphere>().mouse = mouse;
                         sphere.GetComponent<Sphere>().count_text = count_text;
+                        sphere.name = "Sphere";
                         Transform a = sphere.transform.Find("Canvas");
                         sphere.GetComponent<Sphere>().Fill_Amount = a.transform.Find("circle").GetComponent<Image>();
                         sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                         lose_particles.GetComponent<ParticleSystem>().Stop();
                         FindObjectOfType<Shoot_Laser>().Sphere = sphere;
                         Sphere = sphere;
+                        sphere.gameObject.tag = "Sphere";
                         StartCoroutine(enable_win_particles(2f));
                         FindObjectOfType<Audio_sounds>().Play("Glitter");
                     }

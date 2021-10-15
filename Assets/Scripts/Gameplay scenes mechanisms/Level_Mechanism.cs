@@ -21,8 +21,10 @@ public class Level_Mechanism : MonoBehaviour
         {
             Destroy(this);
         }
-        DontDestroyOnLoad(this);
-      
+        else
+        {
+            DontDestroyOnLoad(this);
+        }
     }
 
     private void Start()
