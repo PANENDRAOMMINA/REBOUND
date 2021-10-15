@@ -19941,7 +19941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1164467940, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1164467942, guid: 95eb0f3fe527f3e4cad3dcc035d1d49c, type: 3}
       propertyPath: m_fontAsset
